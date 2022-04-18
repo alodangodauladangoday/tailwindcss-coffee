@@ -11,7 +11,7 @@
     {
       "label": "build:css",
       "type": "shell",
-      "command": "npx tailwindcss  -i ./css/tailwind.css -o ./build/tailwind.css --watch"
+      "command": "npx tailwindcss-cli@latest build ./css/tailwind.css -o ./build/tailwind.css --watch"
     }
   ]
 }
