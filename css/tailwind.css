@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.header__menu-item {
+  @apply cursor-pointer py-1 hover:text-gray-800 relative after:absolute after:bottom-0 after:left-0 after:w-0 hover:after:w-full after:bg-light-coffee  after:h-0.5 after:transition-all after:ease-out after:duration-300 tracking-[2.4px] text-xs;
+}
+.header__cart-badge {
+  @apply w-5 h-5 leading-5 inline-block text-center rounded-[50%] bg-gray-800 opacity-60 transition-opacity duration-200 ease-in text-white;
+}
+.header__cart:hover .header__cart-badge {
+  @apply opacity-100;
+}
